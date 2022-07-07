@@ -1,0 +1,95 @@
+body {
+    background-color: #222034;
+    font-size: 16px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 600px;
+}
+.display-area {
+    position: relative;
+    width:280px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, minmax(40px, auto));
+    text-align: center;
+}
+.currentInput {
+    color:white;
+    height: 60px;
+    background-color:indigo;
+    overflow: hidden;
+    text-align:start;
+}
+.currentOutput {
+    color:azure;
+    font-size: larger;
+    background-color: navy;
+}
+.keyboard {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid: repeat(5, 70px) / repeat(4, 70px);
+    font-size: 3rem;
+
+}
+.keyboard button {
+    line-height: 4rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: darkslategrey;
+    color: white;
+    font-size: x-large;
+}
+.keyboard button:hover {
+    background-color: rgb(255, 240, 128);
+}
+/*
+.keyboard .c_btn:focus{
+    animation: 0.5s 2 multicolor;
+}
+.keyboard .c_btn:active {
+    animation: none;
+}
+
+@keyframes multicolor {
+    0% {background-color: red;}
+    10% {background-color: aqua;}
+    20% {background-color:greenyellow;}
+    30% {background-color: lightgreen;}
+    40% {background-color: deeppink;}
+    50% {background-color: cyan;}
+    60% {background-color: yellow;}
+    70% {background-color: red;}
+    80% {background-color: chartreuse;}
+    90% {background-color: aqua;}
+    100% {background-color: navy;}
+}
+.keyboard .c_btn2:focus {
+    animation: 0.5s 2 multicolor reverse;
+}
+.keyboard .c_btn2:active {
+    animation: none;
+}
+*/
+.keyboard .c_btn:active {
+    background-color:gold;
+}
+.keyboard .c_btn2:active {
+    background-color:goldenrod;
+}
+
+@media only screen and (min-width: 0px){
+    .container {
+        max-width: 2000px;
+        justify-content: center;
+        align-items: center;
+    }
+}
