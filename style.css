@@ -51,11 +51,11 @@ body {
 .keyboard button:hover {
     background-color: rgb(255, 240, 128);
 }
-/*
-.keyboard .c_btn:focus{
+
+.c_btn .btn_glitter:focus{
     animation: 0.5s 2 multicolor;
 }
-.keyboard .c_btn:active {
+.c_btn .btn_glitter :active {
     animation: none;
 }
 
@@ -72,13 +72,13 @@ body {
     90% {background-color: aqua;}
     100% {background-color: navy;}
 }
-.keyboard .c_btn2:focus {
+.c_btn2 .btn_glitter:focus {
     animation: 0.5s 2 multicolor reverse;
 }
-.keyboard .c_btn2:active {
+.c_btn2 .btn_glitter:active {
     animation: none;
 }
-*/
+
 .keyboard .c_btn:active {
     background-color:gold;
 }

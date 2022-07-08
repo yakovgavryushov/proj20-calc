@@ -34,8 +34,12 @@ button.forEach((btn) => {
         outputValue.innerHTML = 0;
         screenValue = ['']
     }
+    if(btn.id.match('glitter_switch')){
+        btn.classList.toggle('btn_glitter')
+    }
     if(typeof eval(screenValue.join('')) == "undefined"){
         outputValue.innerHTML = 0;
     }
+    
 })
 })
